@@ -3,7 +3,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 
@@ -208,17 +207,16 @@ public class ChessGame {
 //		pieces.add(rook);
 		
 		//Example 3
-		rows = 7;
-		cols = 7;
+		rows = 5;
+		cols = 5;
 		pieces.add(king);
 		pieces.add(king);
 		pieces.add(queen);
-		pieces.add(queen);
-		pieces.add(bishop);
-		pieces.add(bishop);
-		//pieces.add(rook);
+		pieces.add(queen);;
+		pieces.add(rook);
 		pieces.add(knight);
 		
+		//sorting list of chess pieces according to priority to place pieces with higher threats first
 		Collections.sort(pieces);
 		String[][] grid = new String[rows][cols];
 		ChessBoard chessBoard = new ChessBoard(grid);
