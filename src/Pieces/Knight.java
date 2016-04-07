@@ -10,6 +10,7 @@ public class Knight extends ChessPiece {
 
 	public Knight(){
 		this.type = "N"; 
+		this.priority = 2;
 	}
 	@Override
 	public String toString(){

@@ -10,6 +10,7 @@ public class Queen extends ChessPiece {
 
 	public Queen(){
 		this.type = "Q"; 
+		this.priority = 5;
 	}
 	@Override
 	public String toString(){

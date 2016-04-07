@@ -9,7 +9,8 @@ import java.util.ArrayList;
 public class King extends ChessPiece{
 	
 	public King(){
-		this.type = "K"; 
+		this.type = "K";
+		this.priority = 1;
 	}
 	
 	@Override

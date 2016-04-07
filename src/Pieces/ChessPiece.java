@@ -6,11 +6,12 @@ import java.util.ArrayList;
  * @author hesham380
  * Chess Piece Parent Class
  */
-public abstract class ChessPiece {
+public abstract class ChessPiece implements Comparable<ChessPiece> {
 	/**
 	 * This variable denotes type of piece ex: K , Q , N , B , R
 	 */
 	String type;
+	int priority;
 	
 	/**
 	 * This function is for checking if a specific piece is added in position (row,col) will not 
@@ -45,6 +46,11 @@ public abstract class ChessPiece {
 		if (!type.equals(other.type))
 			return false;
 		return true;
+	}
+	
+	@Override
+	public int compareTo(ChessPiece p){
+		return p.priority - this.priority;
 	}
 	
 	

@@ -9,7 +9,8 @@ import java.util.ArrayList;
 public class Rook extends ChessPiece{
 
 	public Rook(){
-		this.type = "R"; 
+		this.type = "R";
+		this.priority = 4;
 	}
 	@Override
 	public String toString(){

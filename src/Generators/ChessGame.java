@@ -3,6 +3,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 
 import Pieces.Bishop;
@@ -214,9 +216,10 @@ public class ChessGame {
 		pieces.add(queen);
 		pieces.add(bishop);
 		pieces.add(bishop);
+		//pieces.add(rook);
 		pieces.add(knight);
 		
-		
+		Collections.sort(pieces);
 		String[][] grid = new String[rows][cols];
 		ChessBoard chessBoard = new ChessBoard(grid);
 
@@ -228,6 +231,7 @@ public class ChessGame {
 		} finally {
 			time = System.currentTimeMillis() - time;
 		}
+		//System.out.println(time);
 		chessGame.printBoards(res.size(), time);
 
 	}

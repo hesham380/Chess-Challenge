@@ -10,6 +10,7 @@ public class Bishop extends ChessPiece {
 
 	public Bishop(){
 		this.type = "B"; 
+		this.priority = 3;
 	}
 	
 	@Override
