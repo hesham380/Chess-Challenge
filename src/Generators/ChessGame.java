@@ -1,3 +1,4 @@
+package Generators;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -195,14 +196,26 @@ public class ChessGame {
 //		pieces.add(rook);
 		
 		//Example 2
-		rows = 4;
-		cols = 4;
+//		rows = 4;
+//		cols = 4;
+//		pieces.add(knight);
+//		pieces.add(knight);
+//		pieces.add(knight);
+//		pieces.add(knight);
+//		pieces.add(rook);
+//		pieces.add(rook);
+		
+		//Example 3
+		rows = 7;
+		cols = 7;
+		pieces.add(king);
+		pieces.add(king);
+		pieces.add(queen);
+		pieces.add(queen);
+		pieces.add(bishop);
+		pieces.add(bishop);
 		pieces.add(knight);
-		pieces.add(knight);
-		pieces.add(knight);
-		pieces.add(knight);
-		pieces.add(rook);
-		pieces.add(rook);
+		
 		
 		String[][] grid = new String[rows][cols];
 		ChessBoard chessBoard = new ChessBoard(grid);
